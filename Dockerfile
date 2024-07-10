@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04 
+ROM nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04 
 
 RUN apt-get update  
 
@@ -12,6 +12,8 @@ RUN apt-get install -y git
 WORKDIR /app
 
 COPY entrypoint.sh /app/entrypoint.sh
+
+RUN chmod +x /app/entrypoint.sh
 
 CMD ["/app/entrypoint.sh"]
 
