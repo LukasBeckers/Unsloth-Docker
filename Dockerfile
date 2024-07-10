@@ -9,18 +9,9 @@ RUN apt-get install -y python3-pip \
 
 RUN apt-get install -y git
 
-RUN cd /mnt/Lukas/Unsloth-Docker/
+WORKDIR /app
 
-RUN python -m venv .venv
+COPY entrypoint.sh /app/entrypoint.sh
 
-RUN source .venv/bin/activate
-
-RUN pip3 install notebook jupyter
- 
-RUN pip install --upgrade --force-reinstall --no-cache-dir torch==2.2.0 triton \
-  --index-url https://download.pytorch.org/whl/cu121
-
-RUN pip install "unsloth[cu121-ampere-torch220] @ git+https://github.com/unslothai/unsloth.git"
-
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--port=8101"]
+CMD ["/app/entrypoint.sh"]
 
