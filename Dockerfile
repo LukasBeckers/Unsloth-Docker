@@ -9,7 +9,7 @@ RUN apt-get install -y python3-pip \
 
 RUN apt-get install -y git
 
-RUN cd /mnt/Lukas/unsloth/
+RUN cd /mnt/Lukas/Unsloth-Docker/
 
 RUN python -m venv .venv
 
