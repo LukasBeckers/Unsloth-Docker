@@ -1,0 +1,19 @@
+services:
+  unsloth:
+    build: .
+    ports:
+      - "8889:8889"
+    volumes:
+      - /mnt/Lukas/unsloth/:/mnt/Lukas/unsloth/
+    environment:
+      - WORKDIR=/mnt/Lukas/unsloth/
+      - JUPYTER_TOKEN=J541hItwh&Q
+      - JUPYTER_PASSWORD=J541hItwh&Q
+      - NAME="UnSloth"
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    restart: always
