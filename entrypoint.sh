@@ -15,5 +15,5 @@ pip3 install --upgrade --force-reinstall --no-cache-dir torch==2.2.0 triton \
 
 pip3 install "unsloth[cu121-ampere-torch220] @ git+https://github.com/unslothai/unsloth.git"
 
-exec jupyter notebook -ip=0.0.0.0 --no-browser --port=8101 
+exec jupyter notebook -ip=0.0.0.0 --no-browser --port=8889 
 
