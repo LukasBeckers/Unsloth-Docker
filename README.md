@@ -1,11 +1,33 @@
+# Unsloth-Docker 
+
+## Overview
+
 This is a dockerized deployment of Unsloth AI (link: https://github.com/unslothai/unsloth)
 
-To start:
-    on main: docker compose up -d --build
+This branch includes a docker-compose.yaml to:
+- Deploy the Docker container.
+- Mount the directory of this repository into the Docker container at `/mnt/`.
+- Spawn and expose a Jupyter notebook on port 8889 on all network interfaces of the host.
+    - You can change the port in the ENTRYPOINT line of the Dockerfile.
 
-    on smaller-image: bash start_unsloth.sh
+## Getting Started 
+### Clone the Repository 
+```
+git clone https://github.com/LukasBeckers/Unsloth-Docker.git
+cd Unsloth-Docker.git
+```
+### Building and Deploying the Unsloth-Docker Container
+```
+bash start_unsloth.sh
+```
 
-On the main branch unsloth is added to the docker image.
+### Stopping and Removing the Unsloth-Docker Container
+```
+bash stop_unsloth.sh
+```
 
-On the smaller-image branch unsloth is installed in the entrypoint in a python
-venv in the same folder in which the start_unsloth.sh skript is placed.
+The skript are needed to determine the path of the Repo on your system
+
+## License
+This project is licensed uder the GPL-3.0 license. See the LICENSE file for details.
+
