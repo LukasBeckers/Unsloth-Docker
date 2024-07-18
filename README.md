@@ -2,13 +2,11 @@
 
 ## Overview
 
-This is a dockerized deployment of Unsloth AI (link: https://github.com/unslothai/unsloth)
-
 This branch includes a docker-compose.yaml to:
 - Deploy the Docker container.
 - Mount the directory of this repository into the Docker container at `/mnt/`.
 - Spawn and expose a Jupyter notebook on port 8889 on all network interfaces of the host.
-    - You can change the port in the ENTRYPOINT line of the Dockerfile.
+	- **Token**: `J541hItwh&Q`
 
 ## Getting Started 
 ### Clone the Repository 
