@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides a dockerized deployment of **Unsloth AI** (link: [Unsloth AI Github](https://github.com/unslothai/unsloth)
+This project provides a dockerized deployment of **Unsloth AI** (link: [Unsloth AI Github](https://github.com/unslothai/unsloth))
 
 A Jupyter notebook instance is included in the Docker container for direct use of Unsloth from the container. 
 
