@@ -6,7 +6,7 @@ This project provides a dockerized deployment of **Unsloth AI** (link: [Unsloth 
 
 A Jupyter notebook instance is included in the Docker container for direct use of Unsloth from the container. 
 
-##Notebook
+## Notebook
 - port **8889** 
 	-can be changed in the **Dockerfile ENTRYPOINT** if needed.
 
@@ -19,7 +19,8 @@ The **docker-compose** branch includes a docker-compose.yaml to:
 - Deploy the Docker container.
 - Mount the directory of this repository into the Docker container at `/mnt/`.
 - Spawn and expose a Jupyter notebook on port 8889 on all network interfaces of the host.
-    - **Token**: ´J541hItwh&Q´
+    - **Token**: `J541hItwh&Q`
+    	- Change this in the docker-compose.yaml
 
 For the setup of the **docker-compose** branch view the README.md of the docker-compose branch.
 
