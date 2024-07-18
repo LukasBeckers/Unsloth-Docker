@@ -1,0 +1,9 @@
+xformers<0.0.27
+bitsandbytes==0.43.1
+transformers==4.42.4
+trl<0.9.6
+peft==0.11.1
+notebook
+jupyter
+packaging
+ipykernel

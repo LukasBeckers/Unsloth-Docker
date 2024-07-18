@@ -4,7 +4,7 @@ services:
     ports:
       - "8889:8889"
     volumes:
-      - /mnt/Lukas/Unsloth-Docker/:/mnt/
+      - ${UNSLOTH_DIR}:/mnt/
     environment:
       - WORKDIR=/mnt/Lukas/unsloth/
       - JUPYTER_TOKEN=J541hItwh&Q
