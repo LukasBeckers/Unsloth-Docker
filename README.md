@@ -15,6 +15,7 @@ This branch includes a docker-compose.yaml to:
 ```
 git clone https://github.com/LukasBeckers/Unsloth-Docker.git
 cd Unsloth-Docker.git
+git checkout docker-compose
 ```
 ### Building and Deploying the Unsloth-Docker Container
 ```
