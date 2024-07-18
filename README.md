@@ -21,5 +21,7 @@ The **docker-compose** branch includes a docker-compose.yaml to:
 - Spawn and expose a Jupyter notebook on port 8889 on all network interfaces of the host.
     - **Token**: ´J541hItwh&Q´
 
+For the setup of the **docker-compose** branch view the README.md of the docker-compose branch.
+
 ## License
 This project is licensed uder the GPL-3.0 license. See the LICENSE file for details.
