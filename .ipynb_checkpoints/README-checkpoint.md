@@ -17,11 +17,6 @@ git checkout docker-compose
 ```
 ### Building and Deploying the Unsloth-Docker Container
 ```
-bash build_unsloth.sh
-```
-
-### Starting the Unsloth-Docker Container
-```
 bash start_unsloth.sh
 ```
 

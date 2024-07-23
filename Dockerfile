@@ -14,7 +14,7 @@ RUN useradd -ms /bin/bash worker \
 
 USER worker
 
-WORKDIR /app
+WORKDIR /
 
 COPY requirements.txt .
 
@@ -26,7 +26,5 @@ RUN pip install --upgrade pip && \
     python3 -m ipykernel install --user --name unsloth
 
 ENV PATH="/home/worker/.local/bin:$PATH"
-
-WORKDIR /mnt
 
 ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--port=8889"]

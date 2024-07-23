@@ -6,7 +6,7 @@ services:
     volumes:
       - ${UNSLOTH_DIR}:/mnt/
     environment:
-      - WORKDIR=/mnt/Lukas/unsloth/
+      - WORKDIR=/
       - JUPYTER_TOKEN=J541hItwh&Q
       - JUPYTER_PASSWORD=J541hItwh&Q
       - NAME="UnSloth"
