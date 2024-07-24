@@ -1,4 +1,4 @@
-# Unsloth-Docker 
+# Unsloth-Docker
 
 ## Overview
 
@@ -8,8 +8,8 @@ This branch includes a docker-compose.yaml to:
 - Spawn and expose a Jupyter notebook on port 8889 on all network interfaces of the host.
 	- **Token**: `J541hItwh&Q`
 
-## Getting Started 
-### Clone the Repository 
+## Getting Started
+### Clone the Repository
 ```
 git clone https://github.com/LukasBeckers/Unsloth-Docker.git
 cd Unsloth-Docker.git
@@ -34,4 +34,3 @@ The skript are needed to determine the path of the Repo on your system
 
 ## License
 This project is licensed uder the GPL-3.0 license. See the LICENSE file for details.
-
